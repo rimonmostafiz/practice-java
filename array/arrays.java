@@ -35,11 +35,9 @@ public class arrays {
         for(int i = 0; i < myArray.length; i++) {
             System.out.println(myArray[i]);
         }
-
         for(int theInt : myArray3) {
             System.out.println(theInt);
         }
-
         for(String string : myString1) {
             System.out.println(string);
         }
@@ -51,8 +49,8 @@ public class arrays {
         }
         int[] copymyint = new int[20];
         copymyint = Arrays.copyOf(myint, myint.length);
-
         System.out.println(java.util.Arrays.toString(copymyint));
+
         //copy in range
         copymyint = Arrays.copyOfRange(myint, 5, myint.length);
         System.out.println(java.util.Arrays.toString(copymyint));
@@ -77,7 +75,7 @@ public class arrays {
         Arrays.sort(myint);
         System.out.println(Arrays.toString(myint));
 
-        //Decending order soring using comparator
+        //decending order sorting using comparator
         Integer[] Int;
         Int = new Integer[copymyint.length];
         for (int i = 0; i < copymyint.length; i++) {
