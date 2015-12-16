@@ -3,7 +3,7 @@
  */
 public class main {
     public static void main(String[] args) {
-        arrays myarrayobject= new arrays();
+        arrays myarrayobject = new arrays();
         myarrayobject.go();
     }
 }

@@ -24,28 +24,28 @@ public class arrays {
         int lenMyArray3 = myArray3.length;
 
         //Initializing
-        for(int i = 0; i < myArray.length; i++) {
+        for (int i = 0; i < myArray.length; i++) {
             myArray[i] = i + 1;
         }
-        for(int i = 0; i < myString.length; i++) {
+        for (int i = 0; i < myString.length; i++) {
             myString[i] = "String no " + i;
         }
 
         //accessing array
-        for(int i = 0; i < myArray.length; i++) {
+        for (int i = 0; i < myArray.length; i++) {
             System.out.println(myArray[i]);
         }
-        for(int theInt : myArray3) {
+        for (int theInt : myArray3) {
             System.out.println(theInt);
         }
-        for(String string : myString1) {
+        for (String string : myString1) {
             System.out.println(string);
         }
 
         //copy array
         int[] myint = new int[15];
-        for(int i = 0; i < myint.length; i++) {
-            myint[i] = (int)(Math.random() * 100);
+        for (int i = 0; i < myint.length; i++) {
+            myint[i] = (int) (Math.random() * 100);
         }
         int[] copymyint = new int[20];
         copymyint = Arrays.copyOf(myint, myint.length);
@@ -67,7 +67,7 @@ public class arrays {
         removeFormArray(copymyint, 9);
         removeFormArray(copymyint, 7);
         System.out.println("After Removing: ");
-        for(int in : copymyint) {
+        for (int in : copymyint) {
             System.out.println(in);
         }
 
@@ -87,19 +87,19 @@ public class arrays {
     }
 
     public void insertIntoArray(int[] array, int idx, int val) {
-        for(int i = array.length - 1; i > idx; i--) {
-            array[i] = array[i-1];
+        for (int i = array.length - 1; i > idx; i--) {
+            array[i] = array[i - 1];
         }
         array[idx] = val;
     }
 
     public void removeFormArray(int[] array, int idx) {
-        for(int i = idx; i < array.length - 1; i++) {
+        for (int i = idx; i < array.length - 1; i++) {
             array[i] = array[i + 1];
         }
     }
 
-    public class IntComperator implements Comparator<Integer>{
+    public class IntComperator implements Comparator<Integer> {
         @Override
         public int compare(Integer o1, Integer o2) {
             return o2.compareTo(o1);
