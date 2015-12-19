@@ -1,3 +1,5 @@
+package string;
+
 import java.util.Arrays;
 
 /**
@@ -33,16 +35,16 @@ public class strings {
         //string concatenation performance
         String actual = new StringBuilder(one).append(two).toString(); //StringBuilder Class + append method
 
-        String[] strings = new String[]{"one", "two", "three", "four", "five" };
+        String[] strings = new String[]{"one", "two", "three", "four", "five"};
         String result = null;
 
-        for(String st : strings){
+        for (String st : strings) {
             result = result + st;
         }
 
         //fastest way to concat is to creat StringBuilder once
         StringBuilder sb = new StringBuilder();
-        for(String st : strings) {
+        for (String st : strings) {
             sb.append(st);
         }
         String res = sb.toString();
@@ -60,7 +62,7 @@ public class strings {
 
         String substring = "is";
         int index = theString.indexOf(substring);
-        while(index != -1) {
+        while (index != -1) {
             System.out.println(index);
             index = theString.indexOf(substring, index + 1);
         }
@@ -69,10 +71,10 @@ public class strings {
         System.out.println(last);
 
         //equals
-        String one1   = "abc";
-        String two2   = "def";
+        String one1 = "abc";
+        String two2 = "def";
         String three3 = "abc";
-        String four4  = "ABC";
+        String four4 = "ABC";
 
         System.out.println(one1.equals(two2)); //false
         System.out.println(one1.equals(three3)); //true
@@ -82,14 +84,14 @@ public class strings {
         //startswith and endswith
         one = "This is a good day to code";
 
-        System.out.println( one.startsWith("This")    ); //true
-        System.out.println( one.startsWith("This", 5) ); //starts compare form index 5 so false
+        System.out.println(one.startsWith("This")); //true
+        System.out.println(one.startsWith("This", 5)); //starts compare form index 5 so false
 
-        System.out.println( one.endsWith  ("code")    ); //true
-        System.out.println( one.endsWith  ("shower")  ); //false
+        System.out.println(one.endsWith("code")); //true
+        System.out.println(one.endsWith("shower")); //false
 
         //compareTo
-        one ="abc";
+        one = "abc";
         two = "def";
         String three = "abd";
         String four = "abc";
@@ -117,7 +119,7 @@ public class strings {
         System.out.println(String.join("\n", occurrences)); // possible in java 8 only
 
         source = "A man drove with a car.";
-        int      limit  = 2;
+        int limit = 2;
         occurrences = source.split("a", limit); // limit the split
         System.out.println(string.join("\n", occurrences));
 
@@ -136,8 +138,8 @@ public class strings {
         //char at
         theString = "This is a good day to code";
 
-        System.out.println( theString.charAt(0) );
-        System.out.println( theString.charAt(3) );
+        System.out.println(theString.charAt(0));
+        System.out.println(theString.charAt(3));
 
         //also get the byte representation of the String method using the getBytes() method.
         theString = "This is a good day to code";

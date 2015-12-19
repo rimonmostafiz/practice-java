@@ -1,3 +1,5 @@
+package array;
+
 import java.util.Arrays;
 import java.util.Comparator;
 
@@ -6,24 +8,24 @@ import java.util.Comparator;
  */
 public class arrays {
     public void go() {
-        //Declearing and Initilizing array
+        //declaring and initializing array
         int[] myArray;
         myArray = new int[10];
 
         String[] myString;
         myString = new String[10];
 
-        //Literals
-        int[] myArrray2 = new int[]{1, 2, 3, 4, 5};
+        //literals
+        int[] myArray2 = new int[]{1, 2, 3, 4, 5};
         int[] myArray3 = {5, 4, 3, 2, 1};
 
         String[] myString1 = {"One", "Two", "Three"};
 
-        //lenght of the Array
+        //length of the array
         int lenMyString1 = myString1.length;
         int lenMyArray3 = myArray3.length;
 
-        //Initializing
+        //initializing
         for (int i = 0; i < myArray.length; i++) {
             myArray[i] = i + 1;
         }
@@ -43,17 +45,17 @@ public class arrays {
         }
 
         //copy array
-        int[] myint = new int[15];
-        for (int i = 0; i < myint.length; i++) {
-            myint[i] = (int) (Math.random() * 100);
+        int[] myInt = new int[15];
+        for (int i = 0; i < myInt.length; i++) {
+            myInt[i] = (int) (Math.random() * 100);
         }
-        int[] copymyint = new int[20];
-        copymyint = Arrays.copyOf(myint, myint.length);
-        System.out.println(java.util.Arrays.toString(copymyint));
+        int[] copyMyInt = new int[20];
+        copyMyInt = Arrays.copyOf(myInt, myInt.length);
+        System.out.println(java.util.Arrays.toString(copyMyInt));
 
         //copy in range
-        copymyint = Arrays.copyOfRange(myint, 5, myint.length);
-        System.out.println(java.util.Arrays.toString(copymyint));
+        copyMyInt = Arrays.copyOfRange(myInt, 5, myInt.length);
+        System.out.println(java.util.Arrays.toString(copyMyInt));
 
         //insert element into array
         insertIntoArray(myArray, 6, 25);
@@ -63,25 +65,25 @@ public class arrays {
         System.out.println(java.util.Arrays.toString(myArray));
 
         //deleting element form array
-        removeFormArray(copymyint, 2);
-        removeFormArray(copymyint, 9);
-        removeFormArray(copymyint, 7);
+        removeFormArray(copyMyInt, 2);
+        removeFormArray(copyMyInt, 9);
+        removeFormArray(copyMyInt, 7);
         System.out.println("After Removing: ");
-        for (int in : copymyint) {
+        for (int in : copyMyInt) {
             System.out.println(in);
         }
 
         //sorting
-        Arrays.sort(myint);
-        System.out.println(Arrays.toString(myint));
+        Arrays.sort(myInt);
+        System.out.println(Arrays.toString(myInt));
 
-        //decending order sorting using comparator
+        //descending order sorting using comparator
         Integer[] Int;
-        Int = new Integer[copymyint.length];
-        for (int i = 0; i < copymyint.length; i++) {
-            Int[i] = copymyint[i];
+        Int = new Integer[copyMyInt.length];
+        for (int i = 0; i < copyMyInt.length; i++) {
+            Int[i] = copyMyInt[i];
         }
-        Arrays.sort(Int, new IntComperator());
+        Arrays.sort(Int, new IntComparator());
         System.out.println(Arrays.toString(Int));
 
     }
@@ -99,7 +101,7 @@ public class arrays {
         }
     }
 
-    public class IntComperator implements Comparator<Integer> {
+    public class IntComparator implements Comparator<Integer> {
         @Override
         public int compare(Integer o1, Integer o2) {
             return o2.compareTo(o1);
