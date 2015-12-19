@@ -4,7 +4,7 @@ import java.util.Arrays;
 import java.util.Comparator;
 
 /**
- * Created by rimon on 12/17/15.
+ * @author rimon mostafiz (ferary.rimon@gmail.com)
  */
 public class arrays {
     public void go() {

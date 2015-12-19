@@ -3,14 +3,14 @@ package string;
 import java.util.Arrays;
 
 /**
- * Created by rimon on 12/18/15.
+ * @author rimon mostafiz (ferary.rimon@gmail.com)
  */
 public class strings {
     void go() {
         //creat a new string object
         String string = new String("Hello World");
 
-        //Pointing same object referance
+        //Pointing same object reference
         String string1 = "This is a string";
         String string2 = "This is a string";
 
@@ -42,7 +42,7 @@ public class strings {
             result = result + st;
         }
 
-        //fastest way to concat is to creat StringBuilder once
+        //fastest way to concat is to create StringBuilder once
         StringBuilder sb = new StringBuilder();
         for (String st : strings) {
             sb.append(st);
@@ -81,7 +81,7 @@ public class strings {
         System.out.println(one1.equals(four4)); //false
         System.out.println(one1.equalsIgnoreCase(four4)); //ignore case so true
 
-        //startswith and endswith
+        //startsWith and endsWith
         one = "This is a good day to code";
 
         System.out.println(one.startsWith("This")); //true

@@ -1,12 +1,12 @@
 package array;
 
 /**
- * Created by rimon on 12/17/15.
+ * @author rimon mostafiz (ferary.rimon@gmail.com)
  */
 public class arrayMain {
     public static void main(String[] args) {
-        arrays myarrayobject = new arrays();
-        myarrayobject.go();
+        arrays myArrayObject = new arrays();
+        myArrayObject.go();
     }
 }
 

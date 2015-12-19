@@ -1,7 +1,7 @@
 package string;
 
 /**
- * Created by rimon on 12/18/15.
+ * @author rimon mostafiz (ferary.rimon@gmail.com)
  */
 public class stringMain {
     public static void main(String[] args) {
