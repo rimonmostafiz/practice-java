@@ -57,6 +57,11 @@ public class arrays {
         copyMyInt = Arrays.copyOfRange(myInt, 5, myInt.length);
         System.out.println(java.util.Arrays.toString(copyMyInt));
 
+        //faster copy
+        int[] fastCopy = new int[20];
+        System.arraycopy(myInt, 0, fastCopy, 0, myInt.length);
+        System.out.println("fast copy " + java.util.Arrays.toString(fastCopy));
+
         //insert element into array
         insertIntoArray(myArray, 6, 25);
         insertIntoArray(myArray, 9, 36);
