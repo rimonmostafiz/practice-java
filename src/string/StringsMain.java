@@ -3,9 +3,9 @@ package string;
 /**
  * @author rimon mostafiz (ferary.rimon@gmail.com)
  */
-public class stringMain {
+public class StringsMain {
     public static void main(String[] args) {
-        strings myStringObj = new strings();
+        Strings myStringObj = new Strings();
         myStringObj.go();
     }
 }

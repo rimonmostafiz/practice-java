@@ -1,12 +1,11 @@
 package array;
 
-import java.util.Arrays;
 import java.util.Comparator;
 
 /**
  * @author rimon mostafiz (ferary.rimon@gmail.com)
  */
-public class arrays {
+public class Array {
     public void go() {
         //declaring and initializing array
         int[] myArray;
@@ -50,11 +49,11 @@ public class arrays {
             myInt[i] = (int) (Math.random() * 100);
         }
         int[] copyMyInt = new int[20];
-        copyMyInt = Arrays.copyOf(myInt, myInt.length);
+        copyMyInt = java.util.Arrays.copyOf(myInt, myInt.length);
         System.out.println(java.util.Arrays.toString(copyMyInt));
 
         //copy in range
-        copyMyInt = Arrays.copyOfRange(myInt, 5, myInt.length);
+        copyMyInt = java.util.Arrays.copyOfRange(myInt, 5, myInt.length);
         System.out.println(java.util.Arrays.toString(copyMyInt));
 
         //faster copy
@@ -79,8 +78,8 @@ public class arrays {
         }
 
         //sorting
-        Arrays.sort(myInt);
-        System.out.println(Arrays.toString(myInt));
+        java.util.Arrays.sort(myInt);
+        System.out.println(java.util.Arrays.toString(myInt));
 
         //descending order sorting using comparator
         Integer[] Int;
@@ -88,8 +87,8 @@ public class arrays {
         for (int i = 0; i < copyMyInt.length; i++) {
             Int[i] = copyMyInt[i];
         }
-        Arrays.sort(Int, new IntComparator());
-        System.out.println(Arrays.toString(Int));
+        java.util.Arrays.sort(Int, new IntComparator());
+        System.out.println(java.util.Arrays.toString(Int));
 
     }
 

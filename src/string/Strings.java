@@ -5,7 +5,7 @@ import java.util.Arrays;
 /**
  * @author rimon mostafiz (ferary.rimon@gmail.com)
  */
-public class strings {
+public class Strings {
     void go() {
         //creat a new string object
         String string = new String("Hello World");

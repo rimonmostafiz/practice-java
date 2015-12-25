@@ -3,9 +3,9 @@ package array;
 /**
  * @author rimon mostafiz (ferary.rimon@gmail.com)
  */
-public class arrayMain {
+public class ArrayMain {
     public static void main(String[] args) {
-        arrays myArrayObject = new arrays();
+        Array myArrayObject = new Array();
         myArrayObject.go();
     }
 }
