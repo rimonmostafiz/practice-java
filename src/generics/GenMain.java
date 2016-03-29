@@ -1,5 +1,6 @@
 package generics;
 
+import java.awt.*;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -23,5 +24,8 @@ public class GenMain {
         List<Integer> integerList = new ArrayList<Integer>();
 
         Integer theIntegerElement = addAndReturn(integerElement, integerList);
+
+        Shape rec = Method.read(Rectangle.class, "select * from rectangle where id=1");
+        String str = Method.read(String.class, "select * from string where id=1");
     }
 }

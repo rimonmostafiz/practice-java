@@ -10,4 +10,12 @@ public class Method {
         collection.add(element);
         return element;
     }
+
+    public static <T> T read(Class<T> tClass, String sql) throws IllegalAccessException, InstantiationException {
+        //execute sql
+
+        T o = tClass.newInstance();
+
+        return o;
+    }
 }
