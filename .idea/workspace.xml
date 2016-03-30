@@ -2,9 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6ec48042-5433-4ded-96db-cca77756dfe9" name="Default" comment="new commit&#10;">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/design/creational/Singleton.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/design/creational/Singleton.java" afterPath="$PROJECT_DIR$/src/design/creational/Singleton.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MOVED" beforePath="D:\IdeaProject\java\src\design\builder\BuilderPatternDemo.java" afterPath="$PROJECT_DIR$/src/design/creational/BuilderPatternDemo.java" />
     </list>
     <ignored path="java.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -72,11 +71,11 @@
       <file leaf-file-name="Singleton.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/design/creational/Singleton.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.3442623" vertical-offset="63" max-vertical-offset="525">
-              <caret line="9" column="5" selection-start-line="9" selection-start-column="5" selection-end-line="9" selection-end-column="5" />
+            <state vertical-scroll-proportion="0.3442623" vertical-offset="0" max-vertical-offset="483">
+              <caret line="6" column="25" selection-start-line="6" selection-start-column="25" selection-end-line="6" selection-end-column="25" />
               <folding>
-                <element signature="e#186#187#0" expanded="true" />
-                <element signature="e#233#234#0" expanded="true" />
+                <element signature="e#179#180#0" expanded="true" />
+                <element signature="e#226#227#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -704,7 +703,7 @@
       <workItem from="1450558638476" duration="3087000" />
       <workItem from="1451033636381" duration="10019000" />
       <workItem from="1451079030726" duration="142000" />
-      <workItem from="1459247012535" duration="15983000" />
+      <workItem from="1459247012535" duration="16355000" />
     </task>
     <task id="LOCAL-00001" summary="commit again">
       <created>1450306594201</created>
@@ -754,15 +753,21 @@
       <option name="project" value="LOCAL" />
       <updated>1459279405755</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="new commit&#10;">
+      <created>1459323362952</created>
+      <option name="number" value="00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1459323362952</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="41166000" />
+    <option name="totallyTimeSpent" value="41538000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -1297,11 +1302,11 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/design/creational/Singleton.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.3442623" vertical-offset="63" max-vertical-offset="525">
-          <caret line="9" column="5" selection-start-line="9" selection-start-column="5" selection-end-line="9" selection-end-column="5" />
+        <state vertical-scroll-proportion="0.3442623" vertical-offset="0" max-vertical-offset="462">
+          <caret line="6" column="25" selection-start-line="6" selection-start-column="25" selection-end-line="6" selection-end-column="25" />
           <folding>
-            <element signature="e#186#187#0" expanded="true" />
-            <element signature="e#233#234#0" expanded="true" />
+            <element signature="e#179#180#0" expanded="true" />
+            <element signature="e#226#227#0" expanded="true" />
           </folding>
         </state>
       </provider>
