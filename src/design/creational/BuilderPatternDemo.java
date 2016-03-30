@@ -1,4 +1,4 @@
-package design.builder;
+package design.creational;
 
 import java.util.ArrayList;
 import java.util.List;
