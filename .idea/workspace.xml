@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="6ec48042-5433-4ded-96db-cca77756dfe9" name="Default" comment="new commit&#10;commit linked list implementation">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/modules.xml" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
+    <list default="true" id="6ec48042-5433-4ded-96db-cca77756dfe9" name="Default" comment="new commit&#10;commit">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/datastructure/linkedlist/simple/LinkedList.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="java.iws" />
@@ -29,8 +29,8 @@
       <file leaf-file-name="linkedlist.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/datastructure/linkedlist/simple/linkedlist.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="221">
-              <caret line="19" column="20" selection-start-line="19" selection-start-column="20" selection-end-line="19" selection-end-column="20" />
+            <state relative-caret-position="468">
+              <caret line="30" column="0" selection-start-line="30" selection-start-column="0" selection-end-line="30" selection-end-column="0" />
               <folding>
                 <element signature="e#221#222#0" expanded="true" />
                 <element signature="e#261#262#0" expanded="true" />
@@ -49,6 +49,7 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="UPDATE_TYPE" value="MERGE" />
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="GradleLocalSettings">
@@ -938,7 +939,7 @@
       <workItem from="1451033636381" duration="10019000" />
       <workItem from="1451079030726" duration="142000" />
       <workItem from="1459247012535" duration="16355000" />
-      <workItem from="1460838523048" duration="4439000" />
+      <workItem from="1460838523048" duration="4569000" />
     </task>
     <task id="LOCAL-00001" summary="commit again">
       <created>1450306594201</created>
@@ -1003,11 +1004,18 @@
       <option name="project" value="LOCAL" />
       <updated>1459323362952</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="new commit&#10;commit">
+      <created>1460849103317</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1460849103317</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="45977000" />
+    <option name="totallyTimeSpent" value="46107000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -1062,7 +1070,8 @@
     <MESSAGE value="edit on 20dec2015&#10;" />
     <MESSAGE value="new commit 29 March 2016&#10;" />
     <MESSAGE value="new commit&#10;" />
-    <option name="LAST_COMMIT_MESSAGE" value="new commit&#10;" />
+    <MESSAGE value="new commit&#10;commit" />
+    <option name="LAST_COMMIT_MESSAGE" value="new commit&#10;commit" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
@@ -1431,8 +1440,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/datastructure/linkedlist/simple/linkedlist.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="19" column="20" selection-start-line="19" selection-start-column="20" selection-end-line="19" selection-end-column="20" />
+        <state relative-caret-position="468">
+          <caret line="30" column="0" selection-start-line="30" selection-start-column="0" selection-end-line="30" selection-end-column="0" />
           <folding>
             <element signature="e#221#222#0" expanded="true" />
             <element signature="e#261#262#0" expanded="true" />
