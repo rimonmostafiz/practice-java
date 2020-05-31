@@ -48,4 +48,12 @@ public class BitwiseOperationsShould {
         Assertions.assertEquals(message, decodedMessage);
     }
 
+    @Test
+    public void printBitsOfByte() {
+        String bitOfByte = bitwiseOperations.getBitOfByte((byte) 32);
+        Assertions.assertNotNull(bitOfByte);
+        Assertions.assertNotEquals("", bitOfByte);
+        Assertions.assertEquals("00100000", bitOfByte);
+    }
+
 }
