@@ -8,16 +8,18 @@ public class BitwiseOperations {
     private final int secret = 88;
 
     /**
-     * Methods to print bits of byte
+     * Method to get bits of a byte
      *
      * @param val a value in byte
+     * @return a String contains
      */
-    public void printBitOfByte(byte val) {
+    public String getBitOfByte(byte val) {
+        StringBuilder bits = new StringBuilder();
         for (int i = 128; i > 0; i /= 2) {
-            if ((val & i) != 0) System.out.print("1 ");
-            else System.out.print("0 ");
+            if ((val & i) != 0) bits.append("1");
+            else bits.append("0");
         }
-        System.out.println();
+        return bits.toString();
     }
 
     /**
