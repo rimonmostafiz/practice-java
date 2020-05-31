@@ -13,7 +13,7 @@ public class BitwiseOperations {
      * @param val a value in byte
      * @return a String contains
      */
-    public String getBitOfByte(byte val) {
+    public String getBitsOfByte(byte val) {
         StringBuilder bits = new StringBuilder();
         for (int i = 128; i > 0; i /= 2) {
             if ((val & i) != 0) bits.append("1");
