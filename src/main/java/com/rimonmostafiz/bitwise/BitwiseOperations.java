@@ -1,4 +1,4 @@
-package org.rimonmostafiz.bitwise;
+package com.rimonmostafiz.bitwise;
 
 /**
  * @author Rimon Mostafiz

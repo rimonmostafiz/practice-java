@@ -1,5 +1,6 @@
 package org.rimonmostafiz.generics;
 
+import com.rimonmostafiz.generics.Generic;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 

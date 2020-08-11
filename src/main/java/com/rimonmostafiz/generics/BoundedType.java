@@ -1,4 +1,4 @@
-package org.rimonmostafiz.generics;
+package com.rimonmostafiz.generics;
 
 /**
  * @author Rimon Mostafiz

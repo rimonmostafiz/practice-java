@@ -1,5 +1,6 @@
 package org.rimonmostafiz.bitwise;
 
+import com.rimonmostafiz.bitwise.BitwiseOperations;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 
