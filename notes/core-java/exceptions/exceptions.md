@@ -58,6 +58,3 @@ Code that might throw certain exception must be enclosed by
 <p align="center">
   <img alt="The Exception Hierarchy" src="the-exception-hierarchy.png">
 </p>
-<p align="center">
-  The Exception Hierarchy.
-</p>
