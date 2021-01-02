@@ -16,12 +16,8 @@ When an error occures withing a method, the methods creates an object and hands 
 ### Handle an exception
 After a method throws an exception, the runtime system try to handle it by going through the ordered list of method also known as **_call stack_** that have been called to get to the method where the error occurred.
 <p align="center">
-  <img alt="The Call Stack" src="https://docs.oracle.com/javase/tutorial/figures/essential/exceptions-callstack.gif">
-</p>
-
-<p align="center">
-  The call stack.
-</p>            
+  <img alt="The Call Stack" src="the-call-stack.png">
+</p>         
 
 ### Exception Handler
 The runtime system searches the call stack for a method that contains a block of code that can handle the exception. When an appropriate handler is found, the runtime system passes the exception to the handler. An exception handler is considered appropriate if the type of the exception object thrown matches the type that can be handled by the handler.
