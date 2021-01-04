@@ -1,5 +1,6 @@
 # Daily Java Practice
 
-## [Packages](src/java/io/github/rimonmostafiz/)
-- [core](src/java/main/io/github/rimonmostafiz/core/README.md)
-- [hackerrank](src/java/main/io/github/rimonmostafiz/hackerrank/README.md)
+## Packages
+- [core](src/main/java/io/github/rimonmostafiz/core/README.md)
+- [hackerrank](src/main/java/io/github/rimonmostafiz/hackerrank/README.md)
+- [leetcode]((src/main/java/io/github/rimonmostafiz/leetcode))
