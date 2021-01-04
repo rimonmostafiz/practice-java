@@ -1,6 +1,6 @@
-package org.rimonmostafiz.generics;
+package io.github.rimonmostafiz.core.generics;
 
-import com.rimonmostafiz.generics.Generic;
+import com.rimonmostafiz.core.generics.Generic;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 

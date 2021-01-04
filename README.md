@@ -1,3 +1,3 @@
-# Daily Java Notes
+# Daily Java Practice
 
-- [Core Java(essentials)](notes/core-java/README.md)
+
