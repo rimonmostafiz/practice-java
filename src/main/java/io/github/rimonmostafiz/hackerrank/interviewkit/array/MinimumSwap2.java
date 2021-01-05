@@ -1,4 +1,4 @@
-package com.rimonmostafiz.hackerrank.interviewkit.array;
+package io.github.rimonmostafiz.hackerrank.interviewkit.array;
 
 import java.io.*;
 import java.math.*;

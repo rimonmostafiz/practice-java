@@ -1,4 +1,4 @@
-package com.rimonmostafiz;
+package io.github.rimonmostafiz;
 
 
 /**
