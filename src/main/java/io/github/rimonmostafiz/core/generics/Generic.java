@@ -1,4 +1,4 @@
-package com.rimonmostafiz.generics;
+package io.github.rimonmostafiz.core.generics;
 
 /**
  * @author Rimon Mostafiz

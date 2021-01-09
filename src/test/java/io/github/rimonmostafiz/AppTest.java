@@ -1,4 +1,4 @@
-package org.rimonmostafiz;
+package io.github.rimonmostafiz;
 
 import org.junit.jupiter.api.Test;
 

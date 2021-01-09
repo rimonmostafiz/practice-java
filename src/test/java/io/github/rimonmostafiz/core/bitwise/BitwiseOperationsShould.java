@@ -1,6 +1,5 @@
-package org.rimonmostafiz.bitwise;
+package io.github.rimonmostafiz.core.bitwise;
 
-import com.rimonmostafiz.bitwise.BitwiseOperations;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 

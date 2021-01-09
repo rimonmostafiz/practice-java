@@ -1,5 +1,5 @@
 
-package com.rimonmostafiz.hackerrank.interviewkit.warmup;
+package io.github.rimonmostafiz.hackerrank.interviewkit.warmup;
 
 import java.io.*;
 import java.math.*;

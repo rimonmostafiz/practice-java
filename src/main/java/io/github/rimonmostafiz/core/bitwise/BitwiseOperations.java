@@ -1,4 +1,4 @@
-package com.rimonmostafiz.bitwise;
+package io.github.rimonmostafiz.core.bitwise;
 
 /**
  * @author Rimon Mostafiz
