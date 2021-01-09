@@ -4,8 +4,10 @@ import org.junit.jupiter.api.*;
 import org.junit.jupiter.api.condition.EnabledOnOs;
 import org.junit.jupiter.api.condition.OS;
 
+import java.time.Instant;
+
 import static org.junit.jupiter.api.Assertions.*;
-import static org.junit.jupiter.api.Assumptions.*;
+import static org.junit.jupiter.api.Assumptions.assumeTrue;
 
 //@TestInstance(TestInstance.Lifecycle.PER_CLASS)
 @DisplayName("When running MathUtils tests")
@@ -23,7 +25,7 @@ public class MathUtilsTest {
     }*/
 
     @BeforeAll
-    static void beforeAll() {
+    public static void beforeAll() {
         System.out.println("Before all must be static as its runs before Initialization, \n - Even before initialization of MathUtilTest");
     }
 
@@ -39,8 +41,14 @@ public class MathUtilsTest {
         System.out.println("Cleaning up after each test");
     }
 
+    @AfterAll
+    public static void afterAll() {
+        System.out.println("After all must be static, Method will run after all the test case of this class is finish");
+    }
+
     @Nested
     @DisplayName("add method")
+    @Tag("math")
     class AddTest {
         @Test
         @DisplayName("when adding two positive numbers")
@@ -50,7 +58,7 @@ public class MathUtilsTest {
         }
 
         @Test
-        @DisplayName("when adding two negative number")
+        @DisplayName("when adding two negative numbers")
         public void testAddNegative() {
             int actual = mathUtils.add(-10, -10);
             assertEquals(-20, actual, "should return right sum");
@@ -59,10 +67,40 @@ public class MathUtilsTest {
 
     @Test
     @DisplayName("Calculate Circle Area")
+    @Tag("geo")
     public void testCalculateCircleArea() {
         double actual = mathUtils.calculateCircleArea(10);
         double expected = Math.PI * 100;
         assertEquals(expected, actual);
+    }
+
+    @Test
+    @DisplayName("Calculate Circle Area will fail")
+    @Tag("geo")
+    public void circleAreaWithWrongValueOfPI() {
+        double actual = mathUtils.calculateCircleArea(10);
+        double rightExpected = Math.PI * 100;
+        double wrongExpected = 3.1417 * 100;
+        assertEquals(rightExpected, actual, () -> "Supplier will construct this message lazily if test fails");
+        assertEquals(wrongExpected, actual, () -> "Supplier will construct this message lazily, fails at " + Instant.now().toString());
+    }
+
+    @Test
+    @DisplayName("Test Multiply method using assertAll")
+    @Tag("math")
+    public void testMultiply() {
+        assertAll(
+                () -> assertEquals(4, mathUtils.multiply(2, 2)),
+                () -> assertEquals(0, mathUtils.multiply(2, 0)),
+                () -> assertEquals(-9, mathUtils.multiply(-3, 3))
+        );
+    }
+
+    @RepeatedTest(3)
+    @DisplayName("Test Multiply method should be tested 3 times")
+    @Tag("math")
+    public void testMultiplyMultipleTimes(RepetitionInfo repetitionInfo) {
+        assertEquals(4, mathUtils.multiply(2, 2));
     }
 
     @Test
