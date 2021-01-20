@@ -2,17 +2,19 @@ package io.github.rimonmostafiz.leetcode.array.easy;
 
 /**
  * @author Rimon Mostafiz
+ *
+ * Problem: 27. Remove Element
+ * Link: https://leetcode.com/problems/remove-element/
+ * Difficulty: Easy
+ *
+ * Approach: Two Pointers
+ * Time: O(N)
+ * Space: O(N)
+ *
+ * Runtime: 0 ms, faster than 100.00% of Java online submissions for Remove Element.
+ * Memory Usage: 38.3 MB, less than 50.61% of Java online submissions for Remove Element.
  */
-public class RemoveElement27 {
-
-    /**
-     * Approach: Tow Pointers
-     * Time: O(N)
-     * Space: O(N)
-     *
-     * Runtime: 0 ms, faster than 100.00% of Java online submissions for Remove Element.
-     * Memory Usage: 38.3 MB, less than 50.61% of Java online submissions for Remove Element.
-     */
+public class RemoveElement {
     public int removeElement(int[] nums, int val) {
         int first = 0, last = nums.length - 1;
         while (first < last) {

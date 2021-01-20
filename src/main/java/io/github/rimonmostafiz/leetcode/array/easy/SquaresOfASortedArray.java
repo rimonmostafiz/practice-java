@@ -1,36 +1,22 @@
 package io.github.rimonmostafiz.leetcode.array.easy;
 
-/*
-    Given an array of integers A sorted in non-decreasing order, return an array of the squares of each number, also in sorted non-decreasing order.
-
-    Example 1:
-    Input: [-4,-1,0,3,10]
-    Output: [0,1,9,16,100]
-
-    Example 2:
-    Input: [-7,-3,2,3,11]
-    Output: [4,9,9,49,121]
-
-    Note:
-    1 <= A.length <= 10000
-    -10000 <= A[i] <= 10000
-    A is sorted in non-decreasing order.
-*/
-
 import java.util.Arrays;
 
 /**
  * @author Rimon Mostafiz
+ *
+ * Problem: 977. Squares Of A Sorted Array
+ * Link: https://leetcode.com/problems/squares-of-a-sorted-array/
+ * Difficulty: Easy
+ *
+ * Approach: Two Pointer
+ * Time: O(N), where N is the length of the array
+ * Space: O(N)
+ *
+ * Runtime: 1 ms, faster than 100.00% of Java online submissions for Squares of a Sorted Array.
+ * Memory Usage: 41 MB, less than 88.92% of Java online submissions for Squares of a Sorted Array.
  */
-public class SquaresOfASortedArray977 {
-     /**
-      * Approach: Two Pointer
-      * Time: O(N), where N is the length of the array
-      * Space: O(N)
-      *
-      * Runtime: 1 ms, faster than 100.00% of Java online submissions for Squares of a Sorted Array.
-      * Memory Usage: 41 MB, less than 88.92% of Java online submissions for Squares of a Sorted Array.
-     */
+public class SquaresOfASortedArray {
     public int[] sortedSquares(int[] A) {
         int len = A.length;
         int pa = 0, pb = 0;

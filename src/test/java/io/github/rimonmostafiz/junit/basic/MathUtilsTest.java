@@ -14,8 +14,9 @@ import static org.junit.jupiter.api.Assumptions.assumeTrue;
 public class MathUtilsTest {
 
     private MathUtils mathUtils;
-
     private boolean serverIsUp;
+    private TestInfo testInfo;
+    private TestReporter testReporter;
 
     // When using @TestInstance annotation with PER_CLASS strategy
     // we can remove static form before all method
@@ -30,8 +31,10 @@ public class MathUtilsTest {
     }
 
     @BeforeEach
-    public void init() {
+    public void init(TestInfo testInfo, TestReporter testReporter) {
         System.out.println("Before Each Method");
+        this.testInfo = testInfo;
+        this.testReporter = testReporter;
         mathUtils = new MathUtils();
         serverIsUp = false;
     }
@@ -89,6 +92,7 @@ public class MathUtilsTest {
     @DisplayName("Test Multiply method using assertAll")
     @Tag("math")
     public void testMultiply() {
+        testReporter.publishEntry("Running " + testInfo.getDisplayName() + " with tag " + testInfo.getTags());
         assertAll(
                 () -> assertEquals(4, mathUtils.multiply(2, 2)),
                 () -> assertEquals(0, mathUtils.multiply(2, 0)),
