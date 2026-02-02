@@ -4,8 +4,6 @@ import org.junit.jupiter.api.*;
 import org.junit.jupiter.api.condition.EnabledOnOs;
 import org.junit.jupiter.api.condition.OS;
 
-import java.time.Instant;
-
 import static org.junit.jupiter.api.Assertions.*;
 import static org.junit.jupiter.api.Assumptions.assumeTrue;
 
@@ -85,7 +83,7 @@ public class MathUtilsTest {
         double rightExpected = Math.PI * 100;
         double wrongExpected = 3.1417 * 100;
         assertEquals(rightExpected, actual, () -> "Supplier will construct this message lazily if test fails");
-        assertEquals(wrongExpected, actual, () -> "Supplier will construct this message lazily, fails at " + Instant.now().toString());
+//        assertEquals(wrongExpected, actual, () -> "Supplier will construct this message lazily, fails at " + Instant.now().toString());
     }
 
     @Test

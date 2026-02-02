@@ -1,4 +1,4 @@
-package com.rimonmostafiz.core.accessModifier;
+package com.rimonmostafiz.core.accessmodifier;
 
 /**
  * @author rimonmostafiz
